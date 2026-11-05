@@ -1,0 +1,7 @@
+{
+  "name": "vs-rent-a-car",
+  "private": true,
+  "dependencies": {
+    "nodemailer": "6.9.16"
+  }
+}

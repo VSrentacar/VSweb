@@ -133,10 +133,10 @@
             <h2 data-i18n="apt_form_title">Reserve the apartment</h2>
             <p data-i18n="apt_form_sub">Send a request with your dates. We confirm by phone or email.</p>
           </div>
-          <form class="booking-form" id="apt-form" method="POST" action="https://formsubmit.co/info.vsrentacar@gmail.com" accept-charset="UTF-8" novalidate>
+          <form class="booking-form" id="apt-form" method="POST" action="/api/book" accept-charset="UTF-8" novalidate>
             <input type="hidden" name="requestType" value="Apartment" />
             <input type="hidden" name="address" value="Orce Nikolov 206, Skopje" />
-            <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <input type="text" name="sf_extra" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
             <div class="field-row">
               <div class="field">

@@ -2055,57 +2055,34 @@ function locLabel(value) {
   return value || "—";
 }
 
-const FORMSUBMIT = "https://formsubmit.co/" + encodeURIComponent(SITE.email);
+const FORM_ENDPOINT = "/api/book";
 
 function cleanMailFields(mailBody) {
   const out = {};
   Object.keys(mailBody || {}).forEach((key) => {
     const val = mailBody[key];
-    if (val == null || key === "_gotcha") return;
+    if (val == null || key === "_gotcha" || key === "sf_extra") return;
     out[key] = String(val);
   });
   if (!out.name) out.name = "Guest";
   if (!out.email) out.email = SITE.email;
-  if (!out.message) out.message = "VS Rent a Car request";
-  out._template = "table";
-  out._captcha = "false";
-  out._gotcha = "";
   return out;
 }
 
-function mailFrame() {
-  let frame = document.getElementById("mail-frame");
-  if (frame) return frame;
-  frame = document.createElement("iframe");
-  frame.id = "mail-frame";
-  frame.name = "mail-frame";
-  frame.title = "";
-  frame.tabIndex = -1;
-  frame.setAttribute("aria-hidden", "true");
-  frame.style.cssText = "position:absolute;width:0;height:0;border:0;visibility:hidden";
-  document.body.appendChild(frame);
-  return frame;
-}
-
-function sendBookingNavigate(mailBody) {
+async function sendBooking(mailBody) {
   const fields = cleanMailFields(mailBody);
-  mailFrame();
-  const post = document.createElement("form");
-  post.method = "POST";
-  post.action = FORMSUBMIT;
-  post.target = "mail-frame";
-  post.acceptCharset = "UTF-8";
-  post.hidden = true;
+  const payload = { sf_extra: "", subject: fields._subject || "VS Rent a Car" };
   Object.keys(fields).forEach((key) => {
-    const input = document.createElement("input");
-    input.type = "hidden";
-    input.name = key;
-    input.value = fields[key];
-    post.appendChild(input);
+    if (key.charAt(0) === "_") return;
+    payload[key] = fields[key];
   });
-  document.body.appendChild(post);
-  post.submit();
-  setTimeout(() => post.remove(), 1500);
+  const response = await fetch(FORM_ENDPOINT, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Accept: "application/json" },
+    body: JSON.stringify(payload),
+  });
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok || result.ok === false) throw new Error(result.message || "send failed");
 }
 
 function showSendError(id) {
@@ -2117,7 +2094,7 @@ function showSendError(id) {
 
 function wireFormSubmitAction(formEl) {
   if (!formEl) return;
-  formEl.setAttribute("action", FORMSUBMIT);
+  formEl.setAttribute("action", FORM_ENDPOINT);
   formEl.setAttribute("method", "POST");
   formEl.setAttribute("accept-charset", "UTF-8");
 }
@@ -2179,23 +2156,30 @@ form.addEventListener("submit", async (e) => {
   if (submitBtn) submitBtn.disabled = true;
   if (submitLabel) submitLabel.textContent = t("btn_sending");
 
-  sendBookingNavigate({
-    name: data.fullName,
-    email: data.email,
-    phone: data.phone,
-    Request: "Vehicle rental",
-    Vehicle: data.vehicle || "Not chosen yet",
-    "Pickup location": locLabel(data.pickupLocation),
-    "Pickup date": data.pickupDate,
-    "Pickup time": data.pickupTime,
-    "Return location": locLabel(data.dropoffLocation),
-    "Return date": data.returnDate,
-    "Return time": data.returnTime,
-    Notes: data.notes || "—",
-    Language: currentLang,
-    _subject: `Vehicle rental — ${data.fullName}`,
-    _replyto: data.email,
-  });
+  try {
+    await sendBooking({
+      name: data.fullName,
+      email: data.email,
+      phone: data.phone,
+      Request: "Vehicle rental",
+      Vehicle: data.vehicle || "Not chosen yet",
+      "Pickup location": locLabel(data.pickupLocation),
+      "Pickup date": data.pickupDate,
+      "Pickup time": data.pickupTime,
+      "Return location": locLabel(data.dropoffLocation),
+      "Return date": data.returnDate,
+      "Return time": data.returnTime,
+      Notes: data.notes || "—",
+      Language: currentLang,
+      _subject: `Vehicle rental — ${data.fullName}`,
+      _replyto: data.email,
+    });
+  } catch (_) {
+    if (submitBtn) submitBtn.disabled = false;
+    if (submitLabel) submitLabel.textContent = t("btn_book");
+    showSendError("form-send-error");
+    return;
+  }
 
   if (submitBtn) submitBtn.disabled = false;
   if (submitLabel) submitLabel.textContent = t("btn_book");
@@ -2302,19 +2286,26 @@ if (aptForm) {
     if (submitBtn) submitBtn.disabled = true;
     if (submitLabel) submitLabel.textContent = t("btn_sending");
 
-    sendBookingNavigate({
-      name: data.fullName,
-      email: data.email,
-      phone: data.phone,
-      Request: "Apartment",
-      Apartment: "Orce Nikolov 206, Skopje",
-      "Check-in": data.checkIn,
-      "Check-out": data.checkOut,
-      Notes: data.notes || "—",
-      Language: currentLang,
-      _subject: `Apartment — ${data.fullName}`,
-      _replyto: data.email,
-    });
+    try {
+      await sendBooking({
+        name: data.fullName,
+        email: data.email,
+        phone: data.phone,
+        Request: "Apartment",
+        Apartment: "Orce Nikolov 206, Skopje",
+        "Check-in": data.checkIn,
+        "Check-out": data.checkOut,
+        Notes: data.notes || "—",
+        Language: currentLang,
+        _subject: `Apartment — ${data.fullName}`,
+        _replyto: data.email,
+      });
+    } catch (_) {
+      if (submitBtn) submitBtn.disabled = false;
+      if (submitLabel) submitLabel.textContent = t("apt_btn_book");
+      showSendError("apt-form-send-error");
+      return;
+    }
 
     if (submitBtn) submitBtn.disabled = false;
     if (submitLabel) submitLabel.textContent = t("apt_btn_book");
