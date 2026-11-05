@@ -2073,20 +2073,29 @@ function cleanMailFields(mailBody) {
   return out;
 }
 
+function mailFrame() {
+  let frame = document.getElementById("mail-frame");
+  if (frame) return frame;
+  frame = document.createElement("iframe");
+  frame.id = "mail-frame";
+  frame.name = "mail-frame";
+  frame.title = "";
+  frame.tabIndex = -1;
+  frame.setAttribute("aria-hidden", "true");
+  frame.style.cssText = "position:absolute;width:0;height:0;border:0;visibility:hidden";
+  document.body.appendChild(frame);
+  return frame;
+}
+
 function sendBookingNavigate(mailBody) {
   const fields = cleanMailFields(mailBody);
-  if (location.protocol === "http:" || location.protocol === "https:") {
-    const next = new URL(window.location.href);
-    next.searchParams.set("booked", "1");
-    next.hash = "";
-    fields._next = next.toString();
-  }
+  mailFrame();
   const post = document.createElement("form");
   post.method = "POST";
   post.action = FORMSUBMIT;
+  post.target = "mail-frame";
   post.acceptCharset = "UTF-8";
-  post.style.position = "absolute";
-  post.style.left = "-9999px";
+  post.hidden = true;
   Object.keys(fields).forEach((key) => {
     const input = document.createElement("input");
     input.type = "hidden";
@@ -2096,6 +2105,7 @@ function sendBookingNavigate(mailBody) {
   });
   document.body.appendChild(post);
   post.submit();
+  setTimeout(() => post.remove(), 1500);
 }
 
 function showSendError(id) {
@@ -2186,6 +2196,21 @@ form.addEventListener("submit", async (e) => {
     _subject: `Vehicle rental — ${data.fullName}`,
     _replyto: data.email,
   });
+
+  if (submitBtn) submitBtn.disabled = false;
+  if (submitLabel) submitLabel.textContent = t("btn_book");
+  form.reset();
+  if (vehicleInput) vehicleInput.value = "";
+  if (pickupDate) pickupDate.min = todayISO();
+  if (returnDate) returnDate.min = todayISO();
+  paintNiceDates();
+  form.querySelectorAll(".field.is-invalid").forEach((field) => field.classList.remove("is-invalid"));
+  form.querySelectorAll(".field-error").forEach((err) => {
+    err.textContent = "";
+  });
+  syncCustomSelects();
+  clampNotes();
+  openThanks();
 });
 }
 
@@ -2290,6 +2315,19 @@ if (aptForm) {
       _subject: `Apartment — ${data.fullName}`,
       _replyto: data.email,
     });
+
+    if (submitBtn) submitBtn.disabled = false;
+    if (submitLabel) submitLabel.textContent = t("apt_btn_book");
+    aptForm.reset();
+    if (aptCheckIn) aptCheckIn.min = todayISO();
+    if (aptCheckOut) aptCheckOut.min = todayISO();
+    paintNiceDates();
+    aptForm.querySelectorAll(".field.is-invalid").forEach((field) => field.classList.remove("is-invalid"));
+    aptForm.querySelectorAll(".field-error").forEach((err) => {
+      err.textContent = "";
+    });
+    clampAptNotes();
+    openThanks();
   });
 }
 
