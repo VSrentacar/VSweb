@@ -1,0 +1,27 @@
+{
+  "name": "Very Special Rent a Car",
+  "short_name": "VS Rent a Car",
+  "description": "VS Rent a Car (Very Special Rent a Car) in Skopje. Cars and vans at Skopje International Airport or anywhere in the city centre.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "lang": "mk",
+  "dir": "ltr",
+  "categories": ["travel", "business"],
+  "icons": [
+    {
+      "src": "assets/favicon.png?v=2",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/favicon.png?v=2",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

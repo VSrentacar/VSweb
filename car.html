@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Very Special Rent a Car" />
+  <meta name="publisher" content="Very Special Rent a Car" />
+  <meta name="description" content="Fleet details from VS Rent a Car (Very Special Rent a Car) in Skopje — seats, engine, who it is for. Pickup at Skopje Airport or in the city centre." />
+  <meta property="og:site_name" content="VS Rent a Car" />
+  <meta property="og:title" content="Vehicle | VS Rent a Car" />
+  <meta property="og:description" content="Cars and Mercedes vans for rent at VS Rent a Car in Skopje." />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>Vehicle | VS Rent a Car</title>
+  <link rel="canonical" href="car.html" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="sitemap" type="application/xml" href="sitemap.xml" />
+  <link rel="alternate" type="text/plain" href="llms.txt" title="LLM instructions" />
+  <link rel="alternate" hreflang="mk" href="car.html?lang=mk" />
+  <link rel="alternate" hreflang="en" href="car.html?lang=en" />
+  <link rel="alternate" hreflang="sq" href="car.html?lang=al" />
+  <link rel="alternate" hreflang="x-default" href="car.html" />
+  <link rel="icon" href="assets/favicon-32.png?v=2" type="image/png" sizes="32x32" />
+  <link rel="icon" href="assets/favicon.png?v=2" type="image/png" sizes="512x512" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header is-scrolled" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html" aria-label="Very Special Rent a Car">
+        <img src="assets/logo.png" alt="Very Special Rent a Car" width="160" height="160" />
+      </a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="index.html#how" data-i18n="nav_how">How it works</a>
+        <a href="index.html#why" data-i18n="nav_why">Why us</a>
+        <a href="index.html#fleet" class="is-current" data-i18n="nav_fleet">Fleet</a>
+        <a href="index.html#locations" data-i18n="nav_locations">Locations</a>
+        <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+        <a href="index.html#contact" data-i18n="nav_contact">Contact</a>
+        <a href="apartment.html" class="nav-apt" data-i18n="nav_apt">Need an apartment?</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switch" role="group" data-i18n-aria="lang_group" aria-label="Language">
+          <button type="button" class="lang-btn is-active" data-lang="mk" aria-pressed="true"><span class="flag" aria-hidden="true"></span> MK</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false"><span class="flag" aria-hidden="true"></span> EN</button>
+          <button type="button" class="lang-btn" data-lang="al" aria-pressed="false"><span class="flag" aria-hidden="true"></span> AL</button>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-i18n-aria="menu_open" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <div class="mobile-menu__backdrop" data-close-menu></div>
+    <aside class="mobile-menu__panel" role="dialog" aria-modal="true" data-i18n-aria="menu_label" aria-label="Menu">
+      <div class="mobile-menu__top">
+        <img src="assets/logo.png" alt="" width="72" height="72" />
+        <button class="menu-close" type="button" data-close-menu data-i18n-aria="menu_close" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="nav-mobile">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="index.html#how" data-i18n="nav_how">How it works</a>
+        <a href="index.html#why" data-i18n="nav_why">Why us</a>
+        <a href="index.html#fleet" class="is-current" data-i18n="nav_fleet">Fleet</a>
+        <a href="index.html#locations" data-i18n="nav_locations">Locations</a>
+        <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+        <a href="index.html#contact" data-i18n="nav_contact">Contact</a>
+        <a href="apartment.html" class="nav-apt" data-i18n="nav_apt">Need an apartment?</a>
+      </nav>
+      <div class="lang-switch lang-switch--mobile" role="group">
+        <button type="button" class="lang-btn is-active" data-lang="mk"><span class="flag"></span> MK</button>
+        <button type="button" class="lang-btn" data-lang="en"><span class="flag"></span> EN</button>
+        <button type="button" class="lang-btn" data-lang="al"><span class="flag"></span> AL</button>
+      </div>
+    </aside>
+  </div>
+
+  <main class="car-page" id="car-page"></main>
+
+  <footer class="footer">
+    <div class="container footer__copy">
+      <p>© <span id="year">2026</span> Very Special Rent a Car. <span data-i18n="footer_rights">All rights reserved.</span></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

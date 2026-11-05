@@ -1,0 +1,11 @@
+# AI / assistant discovery for VS Rent a Car (Very Special Rent a Car)
+# Skopje, North Macedonia
+
+Contact: mailto:info.vsrentacar@gmail.com
+Contact: tel:+38975622558
+llms-txt: llms.txt
+llms-full: llms-full.txt
+sitemap: sitemap.xml
+canonical-home: index.html
+languages: mk, en, sq
+do-not-invent: prices as guaranteed, extra branches, apartment amenities, engine sizes

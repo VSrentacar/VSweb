@@ -1,0 +1,14 @@
+/* TEAM */
+Owner: Very Special Rent a Car
+Also known as: VS Rent a Car, VS Rentacar
+Location: Skopje, North Macedonia
+Contact: info.vsrentacar@gmail.com / +389 75 622 558
+Apartment: Orce Nikolov 206, Skopje
+
+/* SITE */
+Standards: HTML5, CSS3, vanilla JavaScript, JSON-LD, llms.txt
+Languages: mk, en, sq
+Pages: index.html, faq.html, apartment.html, car.html, privacy.html, terms.html, cookies.html, copyright.html, rental-terms.html
+AI: llms.txt, llms-full.txt, ai.txt
+Intellectual property: exclusive property of Very Special Rent a Car (VS Rent a Car)
+Last update: 2026-11-05
