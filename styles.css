@@ -2499,13 +2499,13 @@ p { margin: 0 0 1em; }
 }
 
 .modal--thanks h2 {
-  font-size: clamp(1.7rem, 4.5vw, 2.1rem);
-  margin: 0 0 12px;
+  font-size: clamp(1.35rem, 4vw, 1.7rem);
+  margin: 0 0 10px;
 }
 
 .modal--thanks p {
   color: var(--text-muted);
-  font-size: 1.2rem;
+  font-size: 0.98rem;
   line-height: 1.5;
   margin: 0 0 22px;
 }
