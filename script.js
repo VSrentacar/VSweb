@@ -223,7 +223,7 @@ const I18N = {
     nav_apt: "Need an apartment?",
     apt_doc_title: "Apartment | VS Rent a Car Skopje",
     apt_meta_desc:
-      "Rental apartment at Orce Nikolov 206, Skopje, from VS Rent a Car. Photos coming soon — call +389 75 622 558.",
+      "Rental apartment at Orce Nikolov 206, Skopje, from VS Rent a Car. Call +389 75 622 558.",
     apt_cta_kicker: "Also with us",
     apt_cta_title: "Need a place to stay?",
     apt_cta_text:
@@ -234,10 +234,15 @@ const I18N = {
     apt_addr: "Orce Nikolov 206, Skopje",
     apt_map: "Open on the map",
     apt_lead:
-      "The apartment is at Orce Nikolov 206, Skopje. The frames below are for the photos. Until then, call or write.",
+      "The apartment is at Orce Nikolov 206, Skopje. The photos below are of the place. Call or write to reserve.",
     apt_photos: "Photos",
     apt_photo: "Photo",
-    apt_photo_soon: "Photo coming soon",
+    apt_alt_1: "Kitchen and dining table in the apartment",
+    apt_alt_2: "Living room in the apartment",
+    apt_alt_3: "Bathroom with a washing machine",
+    apt_alt_4: "Shower in the apartment",
+    apt_alt_5: "Bedroom in the apartment",
+    apt_alt_6: "View from the balcony",
     apt_contact: "Ask about the apartment",
     apt_form_title: "Reserve the apartment",
     apt_form_sub: "Send a request with your dates. We confirm by phone or email.",
@@ -484,7 +489,7 @@ const I18N = {
     nav_apt: "Или ви треба стан?",
     apt_doc_title: "Стан | VS Rent a Car Скопје",
     apt_meta_desc:
-      "Стан под наем на ул. Орце Николов бр. 206, Скопје, од VS Rent a Car. Сликите доаѓаат наскоро — јавете се на +389 75 622 558.",
+      "Стан под наем на ул. Орце Николов бр. 206, Скопје, од VS Rent a Car. Јавете се на +389 75 622 558.",
     apt_cta_kicker: "И ова го имаме",
     apt_cta_title: "Ви треба стан?",
     apt_cta_text:
@@ -495,10 +500,15 @@ const I18N = {
     apt_addr: "ул. Орце Николов бр. 206, Скопје",
     apt_map: "Отвори на мапа",
     apt_lead:
-      "Станот е на ул. Орце Николов бр. 206, Скопје. Рамките подолу се за сликите. Дотогаш јавете се или пишете.",
+      "Станот е на ул. Орце Николов бр. 206, Скопје. Сликите подолу се од станот. Јавете се или пишете за резервација.",
     apt_photos: "Слики",
     apt_photo: "Слика",
-    apt_photo_soon: "Сликата ќе дојде тука",
+    apt_alt_1: "Кујна и трпезарија во станот",
+    apt_alt_2: "Дневна соба во станот",
+    apt_alt_3: "Бања со машина за перење",
+    apt_alt_4: "Туш во станот",
+    apt_alt_5: "Спална соба во станот",
+    apt_alt_6: "Поглед од балконот",
     apt_contact: "Прашајте за станот",
     apt_form_title: "Резервирајте го станот",
     apt_form_sub: "Испратете барање со датуми. Потврдуваме по телефон или е-пошта.",
@@ -744,7 +754,7 @@ const I18N = {
     nav_apt: "A ju duhet një banesë?",
     apt_doc_title: "Banesë | VS Rent a Car Shkup",
     apt_meta_desc:
-      "Banesë me qira në Orce Nikolov 206, Shkup, nga VS Rent a Car. Fotot vijnë së shpejti — telefononi +389 75 622 558.",
+      "Banesë me qira në Orce Nikolov 206, Shkup, nga VS Rent a Car. Telefononi +389 75 622 558.",
     apt_cta_kicker: "Edhe këtë e kemi",
     apt_cta_title: "Ju duhet një banesë?",
     apt_cta_text:
@@ -755,10 +765,15 @@ const I18N = {
     apt_addr: "Orce Nikolov 206, Shkup",
     apt_map: "Hape në hartë",
     apt_lead:
-      "Banesa është në Orce Nikolov 206, Shkup. Kornizat më poshtë janë për foto. Deri atëherë telefononi ose shkruani.",
+      "Banesa është në Orce Nikolov 206, Shkup. Fotot më poshtë janë të banesës. Telefononi ose shkruani për rezervim.",
     apt_photos: "Foto",
     apt_photo: "Foto",
-    apt_photo_soon: "Fotoja do të jetë këtu",
+    apt_alt_1: "Kuzhina dhe tavolina e ngrënies",
+    apt_alt_2: "Dhoma e ndenjes",
+    apt_alt_3: "Banjo me lavatriçe",
+    apt_alt_4: "Dushi në banesë",
+    apt_alt_5: "Dhoma e gjumit",
+    apt_alt_6: "Pamje nga ballkoni",
     apt_contact: "Pyetni për banesën",
     apt_form_title: "Rezervoni banesën",
     apt_form_sub: "Dërgoni kërkesën me datat. Konfirmojmë me telefon ose email.",
@@ -1045,6 +1060,11 @@ function applyLanguage(lang) {
     if (I18N[lang][key] != null) el.setAttribute("aria-label", I18N[lang][key]);
   });
 
+  document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-alt");
+    if (I18N[lang][key] != null) el.setAttribute("alt", I18N[lang][key]);
+  });
+
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     const on = btn.dataset.lang === lang;
     btn.classList.toggle("is-active", on);
@@ -1203,6 +1223,7 @@ function upsertApartmentSchema() {
           addressCountry: "MK",
         },
         url: url,
+        image: [1, 2, 3, 4, 5, 6].map((n) => base + "assets/flat" + n + ".jpg"),
         landlord: { "@type": "Organization", name: SITE.brand, url: base + "index.html", telephone: SITE.phone, email: SITE.email },
       },
       {

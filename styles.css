@@ -1508,33 +1508,26 @@ p { margin: 0 0 1em; }
 
 .apt-slot {
   margin: 0;
-  min-height: 220px;
+  min-height: 240px;
   background: #14100c;
-  border: 1px dashed rgba(227, 155, 90, 0.45);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  color: #c9a27a;
-  text-align: center;
-  padding: 24px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.apt-slot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 240px;
+  object-fit: cover;
 }
 
 .apt-slot--wide {
-  min-height: 260px;
+  min-height: 280px;
 }
 
-.apt-slot__label {
-  font-family: var(--font-display);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #f3d0a8;
-}
-
-.apt-slot__hint {
-  font-size: 0.9rem;
-  color: #a88b6c;
+.apt-slot--wide img {
+  min-height: 280px;
 }
 
 @media (min-width: 700px) {
@@ -1543,7 +1536,10 @@ p { margin: 0 0 1em; }
   }
   .apt-slot--wide {
     grid-column: 1 / -1;
-    min-height: 320px;
+    min-height: 360px;
+  }
+  .apt-slot--wide img {
+    min-height: 360px;
   }
 }
 
@@ -2503,13 +2499,13 @@ p { margin: 0 0 1em; }
 }
 
 .modal--thanks h2 {
-  font-size: clamp(1.35rem, 4vw, 1.7rem);
-  margin: 0 0 10px;
+  font-size: clamp(1.7rem, 4.5vw, 2.1rem);
+  margin: 0 0 12px;
 }
 
 .modal--thanks p {
   color: var(--text-muted);
-  font-size: 0.98rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   margin: 0 0 22px;
 }

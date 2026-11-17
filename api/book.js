@@ -19,9 +19,9 @@ function row(label, value) {
   const clean = text(value, 2000);
   if (!clean) return "";
   return (
-    '<tr><td style="padding:11px 16px;border-bottom:1px solid #efe8df;width:38%;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#8a8178;">' +
+    '<tr><td style="padding:14px 16px;border-bottom:1px solid #efe8df;width:38%;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#8a8178;">' +
     esc(label) +
-    '</td><td style="padding:11px 16px;border-bottom:1px solid #efe8df;font-size:15px;color:#1c1917;font-weight:600;">' +
+    '</td><td style="padding:14px 16px;border-bottom:1px solid #efe8df;font-size:18px;color:#1c1917;font-weight:600;">' +
     esc(clean) +
     "</td></tr>"
   );
@@ -34,7 +34,7 @@ function block(title, rows, accent) {
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 16px;background:#ffffff;border:1px solid #efe8df;border-radius:14px;overflow:hidden;">' +
     '<tr><td style="padding:10px 16px;background:' +
     accent +
-    ';color:#ffffff;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;">' +
+    ';color:#ffffff;font-size:16px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;">' +
     esc(title) +
     "</td></tr>" +
     body +
@@ -92,8 +92,8 @@ function buildMail(body) {
     '<tr><td style="padding:18px 20px;background:' +
     accent +
     ';border-radius:16px 16px 0 0;">' +
-    '<div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.85);">VS Rent a Car</div>' +
-    '<div style="margin-top:4px;font-size:22px;line-height:1.2;font-weight:700;color:#ffffff;">' +
+    '<div style="font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.85);">VS Rent a Car</div>' +
+    '<div style="margin-top:6px;font-size:28px;line-height:1.2;font-weight:700;color:#ffffff;">' +
     esc(kind) +
     "</div></td></tr>" +
     '<tr><td style="padding:16px;background:' +
@@ -102,7 +102,7 @@ function buildMail(body) {
     guest +
     details +
     notesBlock +
-    '<div style="padding:4px 2px 0;font-size:12px;color:' +
+    '<div style="padding:4px 2px 0;font-size:15px;color:' +
     ink +
     ';">Reply goes to the guest.</div>' +
     "</td></tr></table></div>";

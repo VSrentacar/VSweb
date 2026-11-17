@@ -16,13 +16,19 @@
   </url>
   <url>
     <loc>apartment.html</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mk" href="apartment.html?lang=mk" />
     <xhtml:link rel="alternate" hreflang="en" href="apartment.html?lang=en" />
     <xhtml:link rel="alternate" hreflang="sq" href="apartment.html?lang=al" />
     <xhtml:link rel="alternate" hreflang="x-default" href="apartment.html" />
+    <image:image><image:loc>assets/flat1.jpg</image:loc><image:title>Kitchen and dining table</image:title></image:image>
+    <image:image><image:loc>assets/flat2.jpg</image:loc><image:title>Living room</image:title></image:image>
+    <image:image><image:loc>assets/flat3.jpg</image:loc><image:title>Bathroom</image:title></image:image>
+    <image:image><image:loc>assets/flat4.jpg</image:loc><image:title>Shower</image:title></image:image>
+    <image:image><image:loc>assets/flat5.jpg</image:loc><image:title>Bedroom</image:title></image:image>
+    <image:image><image:loc>assets/flat6.jpg</image:loc><image:title>Balcony view</image:title></image:image>
   </url>
   <url>
     <loc>faq.html</loc>

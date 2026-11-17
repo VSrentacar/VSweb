@@ -10,7 +10,7 @@ Site languages: Macedonian (default), English, Albanian (?lang=mk|en|al).
 ## What they rent
 Cars and vans, plus one apartment.
 Pickup / return: (1) Airport Skopje — Skopje International Airport SKP, Petrovec, approx. 41.961389, 21.621389; put the flight number in the notes. (2) Centre of Skopje — the whole city-centre area, meeting point agreed after confirmation.
-Apartment: Orce Nikolov 206, Skopje. Request form uses check-in and check-out dates only (no pickup location or time). Photos may still be placeholders.
+Apartment: Orce Nikolov 206, Skopje. Request form uses check-in and check-out dates only (no pickup location or time). Photos are assets/flat1.jpg to assets/flat6.jpg.
 
 ## Starting “from” daily rates in EUR (season and extras can change the total; not guaranteed)
 Citroën C3 €29 — 5 seats, 5 doors, petrol, manual gearbox.

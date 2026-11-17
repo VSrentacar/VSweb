@@ -13,7 +13,7 @@
 ## Pages
 - Home / booking: index.html
 - FAQ: faq.html (left-hand categories)
-- Apartment rental: apartment.html — Orce Nikolov 206, Skopje (photos to be added; do not invent price or extra amenities). Booking form: check-in date, check-out date, name, phone, email, notes. No pickup location or time. Same FormSubmit email as car requests.
+- Apartment rental: apartment.html — Orce Nikolov 206, Skopje. Photos: assets/flat1.jpg through assets/flat6.jpg (kitchen, living room, bathroom, shower, bedroom, balcony). Do not invent price or extra amenities. Booking form: check-in date, check-out date, name, phone, email, notes. No pickup location or time. Same FormSubmit email as car requests.
 - Vehicle details: car.html?id={captur|c3|aircross|passat|passat_auto|xc60|vito|viano}
 - Privacy: privacy.html
 - Terms of use: terms.html
