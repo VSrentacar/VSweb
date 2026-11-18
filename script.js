@@ -25,7 +25,7 @@ const LOCATIONS = {
 const FLEET = {
   captur: {
     name: "Renault Captur",
-    image: "assets/Renault Captur.png",
+    image: "assets/captur-white.png",
     price: 39,
     seats: 5,
     doors: 5,
@@ -94,7 +94,7 @@ const FLEET = {
   },
   passat: {
     name: "Volkswagen Passat",
-    image: "assets/passat2.png",
+    image: "assets/passat-auto.png",
     price: 49,
     seats: 5,
     doors: 5,
@@ -133,9 +133,9 @@ const FLEET = {
       al: "Për punë, autostradë, transfere nga aeroporti, ose nëse doni sedan automatik, jo SUV.",
     },
     why: {
-      en: "The same Passat in a lighter colour, with an automatic gearbox — composed on the motorway, a large boot, easier in city traffic.",
-      mk: "Истиот Passat, малку посветла боја, со автоматски менувач — мирен на автопат, голем багажник, полесен во град.",
-      al: "I njëjti Passat, ngjyrë pak më e çelët, me kambio automatike — i qetë në autostradë, bagazh i madh, më i lehtë në qytet.",
+      en: "The same Passat, with an automatic gearbox — composed on the motorway, a large boot, easier in city traffic.",
+      mk: "Истиот Passat, со автоматски менувач — мирен на автопат, голем багажник, полесен во град.",
+      al: "I njëjti Passat, me kambio automatike — i qetë në autostradë, bagazh i madh, më i lehtë në qytet.",
     },
   },
   xc60: {
@@ -365,7 +365,7 @@ const I18N = {
     car_passat:
       "Executive sedan for business travel, airport runs and highway comfort.",
     car_passat_auto:
-      "Same Passat, lighter colour — calm on the highway, easy in the city.",
+      "Same Passat — calm on the highway, easy in the city.",
     car_xc60:
       "Premium SUV with Volvo safety and a quiet cabin.",
     car_vito:
@@ -631,7 +631,7 @@ const I18N = {
     car_passat:
       "Лимузина за работа, аеродром и автопат.",
     car_passat_auto:
-      "Истиот Passat, посветла боја — мирен на автопат, лесен во град.",
+      "Истиот Passat — мирен на автопат, лесен во град.",
     car_xc60:
       "Премиум SUV од Volvo, со тивка кабина.",
     car_vito:
@@ -896,7 +896,7 @@ const I18N = {
     car_passat:
       "Sedan për punë, aeroport dhe autostradë.",
     car_passat_auto:
-      "I njëjti Passat, ngjyrë më e çelët — i qetë në autostradë, i lehtë në qytet.",
+      "I njëjti Passat — i qetë në autostradë, i lehtë në qytet.",
     car_xc60:
       "SUV premium Volvo, me kabinë të qetë.",
     car_vito:
