@@ -78,7 +78,7 @@
     <xhtml:link rel="alternate" hreflang="mk" href="car.html?id=passat&amp;lang=mk" />
     <xhtml:link rel="alternate" hreflang="en" href="car.html?id=passat&amp;lang=en" />
     <xhtml:link rel="alternate" hreflang="sq" href="car.html?id=passat&amp;lang=al" />
-    <image:image><image:loc>assets/passat-auto.png</image:loc><image:title>Volkswagen Passat</image:title></image:image>
+    <image:image><image:loc>assets/passat2.png</image:loc><image:title>Volkswagen Passat</image:title></image:image>
   </url>
   <url>
     <loc>car.html?id=passat_auto</loc>
@@ -88,7 +88,7 @@
     <xhtml:link rel="alternate" hreflang="mk" href="car.html?id=passat_auto&amp;lang=mk" />
     <xhtml:link rel="alternate" hreflang="en" href="car.html?id=passat_auto&amp;lang=en" />
     <xhtml:link rel="alternate" hreflang="sq" href="car.html?id=passat_auto&amp;lang=al" />
-    <image:image><image:loc>assets/passat-auto.png</image:loc><image:title>Volkswagen Passat Automatic</image:title></image:image>
+    <image:image><image:loc>assets/passat2.png</image:loc><image:title>Volkswagen Passat Automatic</image:title></image:image>
   </url>
   <url>
     <loc>car.html?id=xc60</loc>

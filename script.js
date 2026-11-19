@@ -94,7 +94,7 @@ const FLEET = {
   },
   passat: {
     name: "Volkswagen Passat",
-    image: "assets/passat-auto.png",
+    image: "assets/passat2.png",
     price: 49,
     seats: 5,
     doors: 5,
@@ -117,7 +117,7 @@ const FLEET = {
   },
   passat_auto: {
     name: "Volkswagen Passat Automatic",
-    image: "assets/passat-auto.png",
+    image: "assets/passat2.png",
     price: 49,
     seats: 5,
     doors: 5,
