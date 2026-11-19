@@ -68,7 +68,7 @@
     <xhtml:link rel="alternate" hreflang="mk" href="car.html?id=captur&amp;lang=mk" />
     <xhtml:link rel="alternate" hreflang="en" href="car.html?id=captur&amp;lang=en" />
     <xhtml:link rel="alternate" hreflang="sq" href="car.html?id=captur&amp;lang=al" />
-    <image:image><image:loc>assets/captur-white.png</image:loc><image:title>Renault Captur</image:title></image:image>
+    <image:image><image:loc>assets/captur-silver.png</image:loc><image:title>Renault Captur</image:title></image:image>
   </url>
   <url>
     <loc>car.html?id=passat</loc>

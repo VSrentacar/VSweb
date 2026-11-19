@@ -25,7 +25,7 @@ const LOCATIONS = {
 const FLEET = {
   captur: {
     name: "Renault Captur",
-    image: "assets/captur-white.png",
+    image: "assets/captur-silver.png",
     price: 39,
     seats: 5,
     doors: 5,
