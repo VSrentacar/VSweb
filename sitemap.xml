@@ -4,7 +4,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>index.html</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="mk" href="index.html?lang=mk" />
@@ -13,10 +13,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="index.html" />
     <image:image><image:loc>assets/logo.png</image:loc><image:title>VS Rent a Car logo</image:title></image:image>
     <image:image><image:loc>assets/Volvo_xc60.png</image:loc><image:title>Volvo XC60</image:title></image:image>
+    <image:image><image:loc>assets/citroen C3.png</image:loc><image:title>Citroën C3</image:title></image:image>
+    <image:image><image:loc>assets/captur-silver.png</image:loc><image:title>Renault Captur</image:title></image:image>
+    <image:image><image:loc>assets/Mercedes_Vito.png</image:loc><image:title>Mercedes-Benz Vito</image:title></image:image>
   </url>
   <url>
     <loc>apartment.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="mk" href="apartment.html?lang=mk" />
@@ -32,7 +35,7 @@
   </url>
   <url>
     <loc>faq.html</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="mk" href="faq.html?lang=mk" />
@@ -42,123 +45,143 @@
   </url>
   <url>
     <loc>car.html?id=c3</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="mk" href="car.html?id=c3&amp;lang=mk" />
     <xhtml:link rel="alternate" hreflang="en" href="car.html?id=c3&amp;lang=en" />
     <xhtml:link rel="alternate" hreflang="sq" href="car.html?id=c3&amp;lang=al" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="car.html?id=c3" />
     <image:image><image:loc>assets/citroen C3.png</image:loc><image:title>Citroën C3</image:title></image:image>
   </url>
   <url>
     <loc>car.html?id=aircross</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="mk" href="car.html?id=aircross&amp;lang=mk" />
     <xhtml:link rel="alternate" hreflang="en" href="car.html?id=aircross&amp;lang=en" />
     <xhtml:link rel="alternate" hreflang="sq" href="car.html?id=aircross&amp;lang=al" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="car.html?id=aircross" />
     <image:image><image:loc>assets/citroen c3 aircross.png</image:loc><image:title>Citroën C3 Aircross</image:title></image:image>
   </url>
   <url>
     <loc>car.html?id=captur</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="mk" href="car.html?id=captur&amp;lang=mk" />
     <xhtml:link rel="alternate" hreflang="en" href="car.html?id=captur&amp;lang=en" />
     <xhtml:link rel="alternate" hreflang="sq" href="car.html?id=captur&amp;lang=al" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="car.html?id=captur" />
     <image:image><image:loc>assets/captur-silver.png</image:loc><image:title>Renault Captur</image:title></image:image>
   </url>
   <url>
     <loc>car.html?id=passat</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="mk" href="car.html?id=passat&amp;lang=mk" />
     <xhtml:link rel="alternate" hreflang="en" href="car.html?id=passat&amp;lang=en" />
     <xhtml:link rel="alternate" hreflang="sq" href="car.html?id=passat&amp;lang=al" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="car.html?id=passat" />
     <image:image><image:loc>assets/passat2.png</image:loc><image:title>Volkswagen Passat</image:title></image:image>
   </url>
   <url>
     <loc>car.html?id=passat_auto</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="mk" href="car.html?id=passat_auto&amp;lang=mk" />
     <xhtml:link rel="alternate" hreflang="en" href="car.html?id=passat_auto&amp;lang=en" />
     <xhtml:link rel="alternate" hreflang="sq" href="car.html?id=passat_auto&amp;lang=al" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="car.html?id=passat_auto" />
     <image:image><image:loc>assets/passat2.png</image:loc><image:title>Volkswagen Passat Automatic</image:title></image:image>
   </url>
   <url>
     <loc>car.html?id=xc60</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="mk" href="car.html?id=xc60&amp;lang=mk" />
     <xhtml:link rel="alternate" hreflang="en" href="car.html?id=xc60&amp;lang=en" />
     <xhtml:link rel="alternate" hreflang="sq" href="car.html?id=xc60&amp;lang=al" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="car.html?id=xc60" />
     <image:image><image:loc>assets/Volvo_xc60.png</image:loc><image:title>Volvo XC60</image:title></image:image>
   </url>
   <url>
     <loc>car.html?id=vito</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="mk" href="car.html?id=vito&amp;lang=mk" />
     <xhtml:link rel="alternate" hreflang="en" href="car.html?id=vito&amp;lang=en" />
     <xhtml:link rel="alternate" hreflang="sq" href="car.html?id=vito&amp;lang=al" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="car.html?id=vito" />
     <image:image><image:loc>assets/Mercedes_Vito.png</image:loc><image:title>Mercedes-Benz Vito</image:title></image:image>
   </url>
   <url>
     <loc>car.html?id=viano</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="mk" href="car.html?id=viano&amp;lang=mk" />
     <xhtml:link rel="alternate" hreflang="en" href="car.html?id=viano&amp;lang=en" />
     <xhtml:link rel="alternate" hreflang="sq" href="car.html?id=viano&amp;lang=al" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="car.html?id=viano" />
     <image:image><image:loc>assets/Mercedes_Viano_8_1.png</image:loc><image:title>Mercedes-Benz Viano 8+1</image:title></image:image>
   </url>
   <url>
     <loc>privacy.html</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>terms.html</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>cookies.html</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
     <loc>copyright.html</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>rental-terms.html</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>llms.txt</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>llms-full.txt</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>ai.txt</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>.well-known/llms.txt</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>

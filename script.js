@@ -223,7 +223,7 @@ const I18N = {
     nav_apt: "Need an apartment?",
     apt_doc_title: "Apartment | VS Rent a Car Skopje",
     apt_meta_desc:
-      "Rental apartment at Orce Nikolov 206, Skopje, from VS Rent a Car. Call +389 75 622 558.",
+      "Rent an apartment at Orce Nikolov 206, Skopje, with VS Rent a Car. Photos of kitchen, living room, bedroom, bathroom and balcony. Request dates — call +389 75 622 558.",
     apt_cta_kicker: "Also with us",
     apt_cta_title: "Need a place to stay?",
     apt_cta_text:
@@ -264,10 +264,10 @@ const I18N = {
     menu_close: "Close menu",
     menu_label: "Menu",
     modal_close: "Close",
-    page_title: "VS Rent a Car Skopje | Very Special Rent a Car — Airport & city centre",
+    page_title: "Rent a Car Skopje Airport | VS Rent a Car — Very Special Rent a Car",
     faq_doc_title: "FAQ | VS Rent a Car Skopje — age 24, deposit, Airport Skopje pickup",
     meta_desc:
-      "Rent a car in Skopje at VS Rent a Car (Very Special Rent a Car). Pickup at Airport Skopje or anywhere in the city centre. C3, Captur, Passat, XC60 and Mercedes vans from €29/day. Call +389 75 622 558.",
+      "Rent a car at Skopje Airport (SKP) or in the city centre with VS Rent a Car (Very Special Rent a Car). Silver C3, Captur, Passat, XC60 and Mercedes Vito/Viano. From €29/day. Age 24+. Call +389 75 622 558.",
     meta_keywords:
       "VS Rent a Car, VS Rentacar, Very Special Rent a Car, rent a car Skopje, car rental Skopje Airport, Airport Skopje, изнајмување автомобили Скопје, qira makinash Shkup, Mercedes Vito Skopje",
     faq_meta_desc:
@@ -489,7 +489,7 @@ const I18N = {
     nav_apt: "Или ви треба стан?",
     apt_doc_title: "Стан | VS Rent a Car Скопје",
     apt_meta_desc:
-      "Стан под наем на ул. Орце Николов бр. 206, Скопје, од VS Rent a Car. Јавете се на +389 75 622 558.",
+      "Изнајмете стан на ул. Орце Николов бр. 206, Скопје, кај VS Rent a Car. Слики од кујна, дневна, спална, бања и балкон. Испратете датуми — тел. +389 75 622 558.",
     apt_cta_kicker: "И ова го имаме",
     apt_cta_title: "Ви треба стан?",
     apt_cta_text:
@@ -530,10 +530,10 @@ const I18N = {
     menu_close: "Затвори мени",
     menu_label: "Мени",
     modal_close: "Затвори",
-    page_title: "VS Rent a Car Скопје | Very Special Rent a Car — аеродром и центар",
+    page_title: "Изнајмување автомобили Скопје аеродром | VS Rent a Car",
     faq_doc_title: "ЧПП | VS Rent a Car Скопје — возраст 24, депозит, Аеродром Скопје",
     meta_desc:
-      "Изнајмете автомобил во Скопје кај VS Rent a Car (Very Special Rent a Car). Преземање на Аеродром Скопје или во центар. C3, Captur, Passat, XC60 и Mercedes комбиња од 29 €/ден. Тел. +389 75 622 558.",
+      "Изнајмување автомобил на Аеродром Скопје (SKP) или во центар кај VS Rent a Car (Very Special Rent a Car). C3, Captur, Passat, XC60 и Mercedes Vito/Viano. Од 29 €/ден. Возраст 24+. Тел. +389 75 622 558.",
     meta_keywords:
       "VS Rent a Car, VS Rentacar, Very Special Rent a Car, изнајмување автомобили Скопје, rent a car Skopje, Аеродром Скопје, комбе Скопје",
     faq_meta_desc:
@@ -754,7 +754,7 @@ const I18N = {
     nav_apt: "A ju duhet një banesë?",
     apt_doc_title: "Banesë | VS Rent a Car Shkup",
     apt_meta_desc:
-      "Banesë me qira në Orce Nikolov 206, Shkup, nga VS Rent a Car. Telefononi +389 75 622 558.",
+      "Merrni me qira një banesë në Orce Nikolov 206, Shkup, te VS Rent a Car. Foto të kuzhinës, dhomës së ndenjes, dhomës së gjumit, banjos dhe ballkonit. Dërgoni datat — tel. +389 75 622 558.",
     apt_cta_kicker: "Edhe këtë e kemi",
     apt_cta_title: "Ju duhet një banesë?",
     apt_cta_text:
@@ -795,10 +795,10 @@ const I18N = {
     menu_close: "Mbyll menunë",
     menu_label: "Menu",
     modal_close: "Mbyll",
-    page_title: "VS Rent a Car Shkup | Very Special Rent a Car — aeroport dhe qendër",
+    page_title: "Qira makinash Aeroporti i Shkupit | VS Rent a Car",
     faq_doc_title: "Pyetjet e shpeshta | VS Rent a Car Shkup — mosha 24, depozitë, aeroport",
     meta_desc:
-      "Merrni makinë me qira në Shkup te VS Rent a Car (Very Special Rent a Car). Marrje në Aeroportin e Shkupit ose në qendër. C3, Captur, Passat, XC60 dhe furgonë Mercedes nga 29 €/ditë. Tel. +389 75 622 558.",
+      "Qira makinash në Aeroportin e Shkupit (SKP) ose në qendër te VS Rent a Car (Very Special Rent a Car). C3, Captur, Passat, XC60 dhe Mercedes Vito/Viano. Nga 29 €/ditë. Mosha 24+. Tel. +389 75 622 558.",
     meta_keywords:
       "VS Rent a Car, VS Rentacar, Very Special Rent a Car, qira makinash Shkup, rent a car Skopje, Aeroporti i Shkupit, furgon Shkup",
     faq_meta_desc:
@@ -1136,7 +1136,7 @@ function absolutizeJsonLdValue(node) {
   const out = {};
   Object.keys(node).forEach((key) => {
     const val = node[key];
-    if (typeof val === "string" && (key === "url" || key === "image" || key === "logo" || key === "item" || key === "contentUrl" || key === "primaryImageOfPage" || key === "hasMap")) {
+    if (typeof val === "string" && (key === "url" || key === "image" || key === "logo" || key === "item" || key === "contentUrl" || key === "primaryImageOfPage" || key === "hasMap" || key === "target")) {
       out[key] = toAbs(val);
     } else if (key === "@id" && typeof val === "string" && val.startsWith("#")) {
       out[key] = siteBase() + val;
@@ -1162,11 +1162,22 @@ function gearSchema(gear) {
   return undefined;
 }
 
+function carBrandName(name) {
+  const n = String(name || "");
+  if (/mercedes/i.test(n)) return "Mercedes-Benz";
+  if (/volkswagen|passat/i.test(n)) return "Volkswagen";
+  if (/volvo/i.test(n)) return "Volvo";
+  if (/citro/i.test(n)) return "Citroën";
+  if (/renault/i.test(n)) return "Renault";
+  return n.split(" ")[0] || SITE.brand;
+}
+
 function upsertCarSchema(car, id, url) {
   const base = siteBase();
   const img = car.image ? toAbs(car.image) : toAbs("assets/logo.png");
   const sp = (car.specs && (car.specs[currentLang] || car.specs.en)) || {};
   const trans = gearSchema(sp.gear);
+  const brandName = carBrandName(car.name);
   upsertJsonLd("car-schema", {
     "@context": "https://schema.org",
     "@graph": [
@@ -1175,11 +1186,15 @@ function upsertCarSchema(car, id, url) {
         "@id": url + "#vehicle",
         name: car.name,
         image: img,
-        brand: { "@type": "Brand", name: String(car.name).split(" ")[0] },
+        color: "Silver",
+        brand: { "@type": "Brand", name: brandName },
+        manufacturer: { "@type": "Organization", name: brandName },
+        model: car.name.replace(brandName, "").trim() || car.name,
         vehicleSeatingCapacity: car.seats,
         numberOfDoors: car.doors,
         fuelType: sp.fuel || undefined,
         vehicleTransmission: trans,
+        bodyType: sp.body || undefined,
         airConditioning: car.ac ? "Yes" : undefined,
         description: (car.for && (car.for[currentLang] || car.for.en)) || car.name,
         url: url,
@@ -1187,10 +1202,12 @@ function upsertCarSchema(car, id, url) {
           "@type": "Offer",
           priceCurrency: "EUR",
           price: String(car.price),
-          priceSpecification: { "@type": "UnitPriceSpecification", price: String(car.price), priceCurrency: "EUR", unitText: "DAY" },
+          priceSpecification: { "@type": "UnitPriceSpecification", price: String(car.price), priceCurrency: "EUR", unitText: "DAY", referenceQuantity: { "@type": "QuantitativeValue", value: 1, unitCode: "DAY" } },
           availability: "https://schema.org/InStock",
+          priceValidUntil: "2027-12-31",
           url: url,
-          seller: { "@type": "AutoRental", name: SITE.brand, url: base + "index.html" },
+          seller: { "@type": "AutoRental", name: SITE.brand, url: base + "index.html", telephone: SITE.phone, email: SITE.email },
+          areaServed: [{ "@type": "City", name: "Skopje" }, { "@type": "Airport", name: "Skopje International Airport", iataCode: "SKP" }],
         },
       },
       {
@@ -1212,7 +1229,7 @@ function upsertApartmentSchema() {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Apartment",
+        "@type": ["Apartment", "VacationRental"],
         "@id": url + "#apartment",
         name: t("apt_title"),
         description: t("apt_meta_desc"),
@@ -1224,7 +1241,14 @@ function upsertApartmentSchema() {
         },
         url: url,
         image: [1, 2, 3, 4, 5, 6].map((n) => base + "assets/flat" + n + ".jpg"),
+        telephone: SITE.phone,
+        email: SITE.email,
         landlord: { "@type": "Organization", name: SITE.brand, url: base + "index.html", telephone: SITE.phone, email: SITE.email },
+        potentialAction: {
+          "@type": "ReserveAction",
+          target: url + "#apt-reservation",
+          name: t("apt_btn_book"),
+        },
       },
       {
         "@type": "BreadcrumbList",
@@ -1309,6 +1333,14 @@ function applySeoBasics() {
     full.href = base + "llms-full.txt";
     document.head.appendChild(full);
   }
+  if (!document.querySelector('link[href*="ai.txt"]')) {
+    const ai = document.createElement("link");
+    ai.rel = "alternate";
+    ai.type = "text/plain";
+    ai.title = "AI discovery";
+    ai.href = base + "ai.txt";
+    document.head.appendChild(ai);
+  }
 
   ensureHreflang(pagePath);
 
@@ -1361,7 +1393,7 @@ function applySeoBasics() {
   }
   if (file === "apartment.html") {
     upsertApartmentSchema();
-    ogImage = base + "assets/logo.png";
+    ogImage = base + "assets/flat2.jpg";
   }
 
   upsertMeta("property", "og:image", ogImage);

@@ -1,11 +1,19 @@
 # AI / assistant discovery for VS Rent a Car (Very Special Rent a Car)
-# Skopje, North Macedonia
+# Skopje, North Macedonia — local car and van rental, not a broker.
 
 Contact: mailto:info.vsrentacar@gmail.com
 Contact: tel:+38975622558
 llms-txt: llms.txt
 llms-full: llms-full.txt
+well-known: .well-known/llms.txt
 sitemap: sitemap.xml
 canonical-home: index.html
 languages: mk, en, sq
-do-not-invent: prices as guaranteed, extra branches, apartment amenities, engine sizes
+default-language: mk
+pickup: Skopje International Airport SKP (Airport Skopje); centre of Skopje (meeting point agreed)
+apartment: Orce Nikolov 206, Skopje — apartment.html
+fleet-color: silver
+min-driver-age: 24
+booking: website request, then phone or email confirmation; site does not take payment
+do-not-invent: guaranteed prices, extra branches, apartment amenities, engine sizes, opening hours
+cite-as: VS Rent a Car (Very Special Rent a Car), Skopje

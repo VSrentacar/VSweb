@@ -1,5 +1,5 @@
 # Very Special Rent a Car (VS Rent a Car) — Skopje
-# After launch, prefer: Sitemap: https://YOUR-DOMAIN/sitemap.xml
+# Facts for assistants: /llms.txt  /llms-full.txt  /ai.txt  /.well-known/llms.txt
 
 User-agent: *
 Allow: /
@@ -10,16 +10,28 @@ Allow: /
 User-agent: Googlebot-Image
 Allow: /
 
+User-agent: Googlebot-News
+Allow: /
+
 User-agent: Google-Extended
 Allow: /
 
 User-agent: GoogleOther
 Allow: /
 
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: Storebot-Google
+Allow: /
+
 User-agent: Bingbot
 Allow: /
 
 User-agent: DuckDuckBot
+Allow: /
+
+User-agent: DuckAssistBot
 Allow: /
 
 User-agent: Yandex
@@ -38,6 +50,9 @@ User-agent: ClaudeBot
 Allow: /
 
 User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-SearchBot
 Allow: /
 
 User-agent: Anthropic-AI
@@ -73,11 +88,22 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-User-agent: DuckAssistBot
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: xAI
+Allow: /
+
+User-agent: Grok
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: AI2Bot
 Allow: /
 
 Sitemap: sitemap.xml
-# Facts for assistants:
-# llms.txt
-# llms-full.txt
-# ai.txt

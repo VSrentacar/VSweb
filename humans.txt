@@ -11,4 +11,4 @@ Languages: mk, en, sq
 Pages: index.html, faq.html, apartment.html, car.html, privacy.html, terms.html, cookies.html, copyright.html, rental-terms.html
 AI: llms.txt, llms-full.txt, ai.txt
 Intellectual property: exclusive property of Very Special Rent a Car (VS Rent a Car)
-Last update: 2026-11-05
+Last update: 2026-11-19

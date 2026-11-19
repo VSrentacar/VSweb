@@ -1,7 +1,7 @@
 {
   "name": "Very Special Rent a Car",
   "short_name": "VS Rent a Car",
-  "description": "VS Rent a Car (Very Special Rent a Car) in Skopje. Cars and vans at Skopje International Airport or anywhere in the city centre.",
+  "description": "Rent a car at Skopje Airport (SKP) or in the city centre. VS Rent a Car — Very Special Rent a Car. Cars, Mercedes vans, apartment at Orce Nikolov 206.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
